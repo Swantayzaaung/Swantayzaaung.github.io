@@ -1,0 +1,236 @@
+/***Universal Elements and Classes***/
+/*HTML Element Styles*/
+p {font-size: 11pt;}
+a, a:hover { 
+    text-decoration: none; 
+    font-weight: bold;
+    color:#2623c7
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold; 
+    font-family: sans-serif;
+    color:#100e70;
+    font-size: larger;
+}
+hr { 
+    size:1;
+    background-color: #100e70;
+    width:95%;
+}
+button {
+    background-color: #a1a1df;
+    border: 1px solid #aaaacf;
+    border-radius: 0.25rem;
+    font-size: 0.95rem;
+    font-weight: 400;
+    line-height: 1.5;
+    padding: 0.375rem 0.75rem;
+    text-align: center;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    vertical-align: middle;
+}
+img {border: 2px solid #2623c7;}
+/*Navigation Tabs*/
+.nav {
+    background-color: #100e70;
+    position:fixed;
+    width:100%;
+    top:0;
+    z-index: 1;
+}
+.nav > a {
+    display:block;
+    text-align:center;
+    padding:20px;
+    color:#e5e5fa;
+    width:25%;
+    font-size:12pt;
+    z-index: 1;
+}
+.nav > a:hover:not(.focused) {
+    text-decoration: none;
+    background-color: rgb(255,255,255,0.1);
+}
+a.focused {
+    text-decoration: none;
+    background-color: rgb(0,0,0,0.2);
+}
+/*Main co﻿ntent*/
+.main {
+    margin-top:60px;
+    background-color: #e5e5fa;
+    padding:10px;
+    font-family: serif;
+    color:#100e70;
+}
+/*Footer*/
+.footer {
+    background-color:#100e70;
+    color:#e5e5fa;
+    text-align: center;
+}
+/*Center elements*/
+.center {
+    display:block;
+    margin:auto;
+    text-align: center;
+}
+
+/***index.html***/
+/*colored links*/
+#pset8 { color:#008fbb;} #edx { color: #02262b;} #cs50x { color: rgb(196, 54, 36);}
+/*Introduction box*/
+#intropic { text-align: center; }
+#pic { text-align:center; }
+#pic > h2 { font-size: x-large;}
+#pic > img {border-radius:50%;}
+
+/***writing.html***/
+/*quotebox*/
+.quotebox {
+    background-color: #bebee9;
+    padding:10px;
+    border-radius: 1em;
+}
+.quotebox > h6 {
+    text-align: right;
+    font-weight: normal;
+}
+/*hide longer text*/
+.wh_image { display:none; }
+#longinfo { display:none; }
+/*posts*/
+.posts { text-align: center;}
+.post { 
+    background-color: #aaaacf;
+    padding: 10px;
+    width:80%;
+    margin: auto;
+}
+.post_info {display:none; font-weight: normal;}
+
+/***interests.html***/
+/*Carousel settings*/
+#rice_slides { 
+    width:90%; 
+    z-index:0;
+}
+
+/*Caption settings*/
+.carousel-caption > p {
+    font-size:14pt;
+    background-color: rgb(0,0,0,0.5);
+}
+#game { 
+    display:block; 
+    margin:auto;
+}
+
+/***about.html***/
+.aboutbox {
+    padding:10px;
+    background-color: #aaaacf;
+}
+.treasure { width: 50%; background-color: #bebee9; padding: 10px;}
+.treasure > img { border: none;}
+.treasure > button { font-size: 11pt;}
+
+/*display short text by default*/
+#longtext {display:none;}
+
+/***media queries***/
+/*Tablets*/
+@media only screen and (min-width:600px) {
+    /*navbar*/
+    .nav a { 
+        font-size: 14pt;
+    }
+    /*body text*/
+    p { font-size: 12pt; }
+    .main { 
+        padding: 20px; 
+        overflow: hidden;
+    }
+    /*index.html*/
+
+    /*writing.html*/
+    #longinfo {display:unset;}
+    #shortinfo {display:none;}
+    .w_head { display:table-row;}
+    .wh_part { 
+        display:table-cell; 
+        vertical-align: middle;
+        padding:10px
+    }
+    .wh_image { width:30%;}
+    .wh_image > img { border-radius: 1rem;}
+    .post {
+        display:table-row;
+    }
+    .post_part {
+        display:table-cell;
+        vertical-align: middle;
+        padding:10px;
+    }
+    .post_text { text-align: left; width:80%}
+    .post_info {display:unset;}
+    .post_image { text-align: right;}
+    .post > a { 
+        text-decoration: none;
+        color: #100e70
+    }
+    /*about.html*/
+    .aboutbox {display:table-row;}
+    .aboutbox_part {
+        display:table-cell;
+        padding:10px;
+        vertical-align: middle;
+    }
+    .about_pfp { width: 30%;}
+}
+/*Desktops and laptops*/
+@media only screen and (min-width:1000px) {
+    /*navbar*/
+    .nav a { 
+        font-size: 16pt;
+    }
+    /*body text*/
+    p { font-size: 14pt; }
+    .main { 
+        padding: 50px; 
+        overflow: hidden;
+        margin-top: 4%;
+    }
+    /*index.html*/
+    .introbox {
+        float:left;
+        width:50%;
+    }
+    /*writing.html*/
+    #longinfo {display:unset;}
+    #shortinfo {display:none;}
+    .w_head { display:table-row;}
+    .wh_part { 
+        display:table-cell; 
+        vertical-align: middle;
+        padding:10px
+    }
+    .wh_image { width:30%;}
+    .wh_image > img { border-radius: 5%;}
+    .post {overflow: hidden; display:table-row}
+    .post_part {
+        display:table-cell;
+        vertical-align: middle;
+        padding:10px;
+    }
+    .post_text { text-align: left; width:80%}
+    .post_info {display:unset;}
+    .post_image { text-align: right;}
+    .post > a { 
+        text-decoration: none;
+        color: #100e70
+    }
+    /*about.html*/
+    #longtext {display: unset;}
+    #shorttext {display: none;}
+}

@@ -1,0 +1,90 @@
+colors:
+text - #100e70 
+body - #d7d7f8
+button -    bg - #a1a1df
+            border - 1px solid #aaaacf
+#pset8 { color:#008fbb;} #edx { color: #02262b;} #cs50x { color: rgb(196, 54, 36);}
+quote box - bg - #bebee9
+            border - #aaaacf
+navbar: Home, Writing, Interests, About
+footer:  &#169; Copyright <u>Swan Tayza Aung</u> 2021
+tab icon -> <link rel="icon" href="assets/images/duck.png">
+
+
+index.html
+----------
+Swan Tayza Aung
+Student, Gamer and New Programmer
+
+Introduction:
+Hi! Welcome to my homepage, which I've made for <a id="pset8" href="https://cs50.harvard.edu/x/2021/psets/8/homepage">Problem Set 8</a> of <a id="cs50x" href="https://cs50.harvard.edu/x/2021">CS50x</a>, 
+a fantastic Computer Science course by Harvard. I first tried the course way back in 2019, when I was still 12 and didn't 
+have a good grasp of the crucial concepts of programming, so I found the problem sets bafflingly difficult. I stopped after 
+Week 2. Two years passed and during the summer holidays this year, I decided to give it another try. I'm doing much better 
+this time around, and I aim to finish the Final Project by December. 
+<br> <br>
+I plan to use this as my personal page, and will continually update it with new posts, projects and features. 
+In the meantime, feel free to explore around.
+
+Credit:
+Special thanks to Tr. Lynn Wei Nyane for introducing me to 
+<a id="edx" href="https://www.edx.org/course/introduction-computer-science-harvardx-cs50x">CS50x on EDx</a> 
+and several other amazing online learning sites, along with constantly supporting me as I further my education.
+
+interests.html
+--------------
+<h2>Ricing</h2>
+            <p>By "rice", I mean desktop customization. I've been using Arch Linux for quite a few months now, and 
+                love tinkering around with different parts of my system's UI components, including window managers, status bars 
+                and keyboard shortcuts. Additionally, I enjoy writing up short shell scripts to liven up my otherwise bland
+                terminals and creating colorschemes to match my wallpaper. 
+<!--Table Tennis-->
+            <h2>Table Tennis</h2>
+            <p>I've never really been talented at sports, but among them, table tennis is the one I find most enjoyable. 
+                I used to play at our local club but because of the pandemic, I currently play at home with my dad, who
+                often invites a few of his friends over. What I love about table tennis is that it does not require a team
+                (I'm terrible at team sports), and has a fast-paced yet strategic playing style.
+            </p>
+Carousel:
+            <div id="rice_slides" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#rice_slides" data-slide-to="0" class="active"></li>
+                    <li data-target="#rice_slides" data-slide-to="1"></li>
+                    <li data-target="#rice_slides" data-slide-to="2"></li>
+                    <li data-target="#rice_slides" data-slide-to="3"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="assets/images/rice1.png" alt="My first rice">
+                        <div class="carousel-caption d-none d-md-block">
+                          <p>My first rice</p>  
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="assets/images/rice2.png" alt="Changed colors">
+                        <div class="carousel-caption d-none d-md-block">
+                          <p>Changed some colors</p>  
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="assets/images/rice3.png" alt="Current setup">
+                        <div class="carousel-caption d-none d-md-block">
+                          <p>My current setup</p>  
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="assets/images/notarice1.png" alt="Not this XD">
+                        <div class="carousel-caption d-md-block">
+                          <p>Not this! XD</p>  
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#rice_slides" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Prev</span>
+                </a>
+                <a class="carousel-control-next" href="#rice_slides" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
