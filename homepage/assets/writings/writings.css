@@ -1,7 +1,10 @@
 .main {
     background-color: #e5e5fa;
     color:#100e70;
-    padding: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    padding-top:10px;
 }
 h1 {
     background-color: #100e70;
@@ -46,4 +49,15 @@ button {
     font-size:12pt;
     background-color: rgb(0,0,0,0.1);
     text-align: center;
+}
+.footer {
+    background-color:#100e70;
+    color:#e5e5fa;
+    text-align: center;
+}
+@media screen and (max-width:600px) {
+    .main {
+        padding:10px;
+    }
+    p { font-size: 12pt; }
 }
